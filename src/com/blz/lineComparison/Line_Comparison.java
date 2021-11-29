@@ -1,5 +1,7 @@
 package com.blz.lineComparison;
+
 import java.util.Scanner;
+
 public class Line_Comparison {
     public static void main(String[] args) {
         System.out.println("Welcome to Line Comparison Computation");
@@ -13,7 +15,7 @@ public class Line_Comparison {
         double y = Math.pow((y2 - y1), 2);
         Double length = Math.floor(Math.sqrt(x + y));
         System.out.println(length);
-
+        //second length
         System.out.println("Enter the second line of co-ordinated");
         System.out.println("Enter the first (a1,b1) point");
         int a1 = getInputFromUser("first");
@@ -26,12 +28,11 @@ public class Line_Comparison {
         double length1 = Math.floor(Math.sqrt(a + b));
         System.out.println(length1);
         int result = length.compareTo(length1);
-        if (result ==0)
-        {
+        if (result == 0) {
             System.out.println("This line is equals");
-        }else if (result >0){
+        } else if (result > 0) {
             System.out.println("First line is grater then second");
-        } else if (result <0) {
+        } else if (result < 0) {
             System.out.println("Second line is grater then first");
         }
     }
@@ -39,6 +40,5 @@ public class Line_Comparison {
         System.out.println("Enter the " + number + " line co-ordinated");
         Scanner sc = new Scanner(System.in);
         return sc.nextInt();
-
     }
 }
