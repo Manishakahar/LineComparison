@@ -1,4 +1,4 @@
-package com.blz.lineComparison;
+package com.blz.linecomparison;
 import java.util.Scanner;
 public class LineComparison {
     static  int x1,y1,x2,y2;
